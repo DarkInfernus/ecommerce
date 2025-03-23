@@ -2,11 +2,10 @@ package dev.divyansh.productservicettsevening.dtos;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
-public class ProductDto {
+public class FakeStoreApiProductDto {
     private Long id;
     private String title;
     private double price;
