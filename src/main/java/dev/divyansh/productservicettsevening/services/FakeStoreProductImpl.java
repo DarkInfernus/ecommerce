@@ -23,7 +23,7 @@ public class FakeStoreProductImpl implements ProductService {
     }
     private Product convertFakeStoreApiProductDtoToProduct(FakeStoreApiProductDto productDto){
         Product product=new Product();
-        product.setId(productDto.getId());
+//        product.setId(productDto.getId());
         product.setTitle(productDto.getTitle());
         product.setPrice(productDto.getPrice());
         product.setDescription(productDto.getDescription());
@@ -31,7 +31,6 @@ public class FakeStoreProductImpl implements ProductService {
         Category category=new Category();
         category.setName(productDto.getCategory());
         product.setCategory(category);
-        product.setRating(productDto.getRating());
         return product;
     }
     @Override
